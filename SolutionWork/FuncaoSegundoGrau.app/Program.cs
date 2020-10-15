@@ -29,7 +29,7 @@ namespace FuncaoSegundoGrau.app
             string valorX1;
             double x1 = (((b1 * (-1)) + delta) / (2 * a1));
 
-            Console.WriteLine("Delta é igual a: " + (Math.Pow(b1, 2) - (4 * a1 * c1)));
+            Console.WriteLine("\nDelta é igual a: " + (Math.Pow(b1, 2) - (4 * a1 * c1)));
 
             if (delta > 0)
             {
@@ -38,6 +38,7 @@ namespace FuncaoSegundoGrau.app
             else if (delta == 0)
             {
                 valorX1 = String.Format("Valor descriminante igual a 0\n\tentão x é igual a: " + x1);
+                Console.ReadKey();
             }
             else
             {
@@ -55,6 +56,7 @@ namespace FuncaoSegundoGrau.app
             {
                 double x2 = (((b2 * (-1)) - delta) / 2 * a2);
                 Console.WriteLine("x2 é igual a: " + x2 + "\n\n");
+                Console.ReadKey();
             }
         }
     }
